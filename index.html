@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Explain My Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- WELCOME SCREEN -->
+<div id="welcomeScreen">
+    <h1>🚀 Explain My Code</h1>
+    <p>Understand your code instantly</p>
+    <button onclick="startApp()">Start</button>
+</div>
+
+<!-- MAIN APP -->
+<div id="mainApp" style="display:none;">
+    <div class="container">
+
+        <h1>Explain My Code 🧠</h1>
+
+        <select id="language">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="cpp">C / C++</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="aiMode"> AI Mode
+        </label>
+
+        <!-- EDITOR -->
+        <div class="editor">
+            <div id="lineNumbers"></div>
+            <textarea id="codeInput" oninput="updateLines()" placeholder="Paste your code here..."></textarea>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="buttons">
+            <button onclick="explainCode()">Explain</button>
+            <button onclick="clearText()">Clear</button>
+            <button onclick="copyOutput()">Copy Explanation</button>
+        </div>
+
+        <!-- LOADER -->
+        <div id="loader" style="display:none;">Analyzing code...</div>
+
+        <!-- OUTPUT -->
+        <div id="output"></div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

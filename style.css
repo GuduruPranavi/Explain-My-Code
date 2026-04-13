@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #00adb5;
+}
+
+/* WELCOME SCREEN */
+#welcomeScreen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+#welcomeScreen h1 {
+    font-size: 40px;
+    color: #00adb5;
+}
+
+/* EDITOR */
+.editor {
+    display: flex;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#lineNumbers {
+    padding: 10px;
+    background: #111;
+    color: #888;
+    text-align: right;
+}
+
+textarea {
+    flex: 1;
+    height: 220px;
+    background: #1e1e1e;
+    color: #00ffcc;
+    border: none;
+    padding: 10px;
+    font-family: monospace;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 18px;
+    margin: 8px;
+    border-radius: 8px;
+    background: #00adb5;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #007b83;
+}
+
+/* OUTPUT */
+#output {
+    margin-top: 20px;
+}
+
+.line {
+    background: #1c1c1c;
+    margin: 10px 0;
+    padding: 12px;
+    border-left: 5px solid #00adb5;
+    text-align: left;
+}
+
+/* LOADER */
+#loader {
+    margin-top: 10px;
+    color: #00adb5;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0.3; }
+}
