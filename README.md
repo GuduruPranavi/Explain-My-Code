@@ -1,18 +1,26 @@
-Explain My Code 🧠
+# Explain My Code
 
-A web application that explains code line-by-line in a human-readable format.
+A web-based application that converts programming code into simple, human-readable explanations to help beginners understand programming logic easily.
 
-Features:
-- Supports multiple languages (Java, Python, JavaScript)
-- Smart explanation of loops, conditions, variables
-- Line-by-line breakdown
-- Copy explanation feature
-- Clean UI with real-time output
+# Features
+- Line-by-line code explanation
+- Supports multiple programming languages
+- Detects loops, variables, and conditions
+- Real-time explanation generation
+- Clean and user-friendly interface
+- Copy and clear functionality
 
- Tech Stack:
+# Technologies Used
 - HTML
 - CSS
 - JavaScript
 
- Live Demo
-https://gudurupranavi.github.io/Explain-My-Code/
+# How It Works
+1. Enter or paste code into the editor  
+2. Select the programming language  
+3. Click the "Explain" button  
+4. View simple line-by-line explanations
+
+# Project Domain
+Web Development / Educational Technology (EdTech)
+
